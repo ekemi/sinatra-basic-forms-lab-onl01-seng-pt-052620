@@ -10,6 +10,7 @@ get '/new' do
 end
   post '/puppy' do
    @puppy = Puppy.new(params)
+   redirect '/display_puppy'
   end
 
 end
